@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Creative Design </title>
+</head>
+
+<body>
+    <!-- Start Settings -->
+    <div class="settings">
+        <div class="settings-content">
+            <div onclick="settingsToggle()" class="settings-icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <h2>Settings Options</h2>
+            <div class="box-settings">
+                <div class="colors">
+                    <h3>Color</h3>
+                    <ul class="colors-list">
+                        <li data-color="#ef3e1ed4" class="active"></li>
+                        <li data-color="#E91E63"></li>
+                        <li data-color="#009688"></li>
+                        <li data-color="#03A9F4"></li>
+                        <li data-color="#C4AF50"></li>
+                    </ul>
+                </div>
+                <hr class="main-hr">
+            </div>
+            <div class="box-settings">
+                <div class="colors">
+                    <h3>Random Background </h3>
+                    <div class="bg-options">
+                        <span class="yes active" data-background="yes">Yes</span>
+                        <span class="no" data-background="no">No</span>
+                    </div>
+                </div>
+                <hr class="main-hr">
+            </div>
+        </div>
+    </div>
+    <!-- End Settings -->
+    <!-- Start Landing -->
+    <section class="landing show">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/creative-logo.png" alt="logo">
+                </div>
+                <!-- <div class="menu-icon"> -->
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <!-- </div>     -->
+                <ul class="menu">
+                    <li><a data-section=".landing" class="active" href="#">Home</a></li>
+                    <li><a  data-section=".about" href="#">About</a></li>
+                    <li><a data-section=".skills" href="#">Skills</a></li>
+                    <li><a data-section=".features" href="#">Features</a></li>
+                    <li><a data-section=".timeline" href="#">Timeline</a></li>
+                    <li><a data-section=".gallery" href="#">Gallery</a></li>
+                    <li><a data-section=".contact-us" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>We Are <span>Creative</span> Agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex ipsam nesciunt, impedit hic
+                    molestias debitis consequatur odio suscipit in.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Landing -->
+    <!-- Start About -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="spacial-heading">
+                    <h2>About Us</h2>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ipsa quas nisi, velit labore
+                        aliquam doloremque praesentium rerum magni modi, repellendus dolorem error reiciendis dolor
+                        voluptatem iure, delectus quo pariatur!
+                        <button class="see-more">See More</button>
+                    </p>
+                    <img src="images/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->  
+    <!-- Start Features -->
+    <section class="features">
+        <div class="container">
+            <div class="spacial-heading">
+                <h2>Our Features</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab, et ipsam magni dolores harum
+                    necessitatibus quo, architecto vitae hic error cupiditate cum molestias! Aut ex ipsa vitae
+                    consectetur labore!
+                </p>
+            </div>
+                <main id="main">
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/web-gesign.jpg" alt="Scorched Earth - Ark Survival Evolved" />
+                        <div class="text">
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/ux-ui.jpg" alt="Fjordur - Ark Survival Evolved" />
+                        <div class="text">
+                            <h2>UX/UI</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/graphic.jpg" />
+                        <div class="text">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/frontend.jpg" />
+                        <div class="text">
+                            <h2>Frontend dev</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/backend.jpg" />
+                        <div class="text">
+                            <h2>Backend dev</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="badge">Hover Me</span>
+                        <img src="images/video-editing.jpg" />
+                        <div class="text">
+                            <h2>Video Editing</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio. Quasi non molestias odio.</p>
+                        </div>
+                    </div>
+                </main>    
+        </div>
+    </section>
+    <!-- End Features -->   
+    <!-- Start Skills -->
+    <section class="skills">
+        <div class="container">
+            <div class="spacial-heading">
+                <h2>Our Skills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab, et ipsam magni dolores harum
+                    necessitatibus quo, architecto vitae hic error cupiditate cum molestias! Aut ex ipsa vitae
+                    consectetur labore!</p>
+            </div>
+            <div class="skills-boxes">
+                <div class="box">
+                    <div class="name">HTML</div>
+                    <div class="progress">
+                        <span data-progress="90%"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="name">CSS</div>
+                    <div class="progress">
+                        <span data-progress="70%"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="name">JS</div>
+                    <div class="progress">
+                        <span data-progress="98%"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="name">PHP</div>
+                    <div class="progress">
+                        <span data-progress="75%"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="name">PYTHON </div>
+                    <div class="progress">
+                        <span data-progress="90%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills -->
+    <!-- Start Timeline -->
+    <section class="timeline-section" >
+        <div class="container">
+            <div class="spacial-heading">
+                <h2>Our Timeline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab, et ipsam magni dolores harum
+                    necessitatibus quo, architecto vitae hic error cupiditate cum molestias! Aut ex ipsa vitae
+                    consectetur labore!
+                </p>
+            </div>
+            <ul class="timeline">
+
+                <!-- Item 1 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Freelancer</span>
+                            <span class="time-wrapper"><span class="time">2013 - present</span></span>
+                        </div>
+                        <div class="desc">My current employment. Way better than the position before!</div>
+                    </div>
+                </li>
+              
+                <!-- Item 2 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Apple Inc.</span>
+                            <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                        </div>
+                        <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                    </div>
+                </li>
+            
+                <!-- Item 3 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Harvard University</span>
+                            <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+                        </div>
+                        <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                    </div>
+                </li>
+              
+            </ul>
+        </div>
+    </section>
+    <!-- End Timeline -->
+    <!-- Start Our Gallery -->
+    <section class="gallery" >
+        <div class="container">
+            <div class="spacial-heading">
+                <h2>Our Gallery</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil blanditiis debitis ullam doloremque
+                    fugiat! Eaque et deleniti doloremque laboriosam! Ullam dolorum excepturi saepe. Ad consequuntur
+                    adipisci necessitatibus vitae error dolor.</p>
+            </div>
+            <div class="images-box">
+                <img src="images/gallery-00.jpg" alt="Image One">
+                <img src="images/gallery-01.jpg" alt="Image Two">
+                <img src="images/gallery-02.jpg" alt="Image Three">
+                <img src="images/gallery-03.jpg" alt="Image Four">
+                <img src="images/gallery-04.jpg" alt="Image Five">
+                <img src="images/gallery-05.jpg" alt="Image six">
+                <img src="images/gallery-06.jpg" alt="Image Seven">
+                <img src="images/gallery-07.jpg" alt="Image Eight">
+            </div>
+        </div>
+    </section>
+    <!-- End Our Gallery --> 
+    <!-- Start Contact Us -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="spacial-heading">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab, et ipsam magni dolores harum
+                    necessitatibus quo, architecto vitae hic error cupiditate cum molestias! Aut ex ipsa vitae
+                    consectetur labore!
+                </p>
+            </div>
+            <div class="contact">
+                <div class="contact-image">
+                    <div class="container">
+
+                        <div class="social">
+                          <a href="https://twitter.com" target="_blank" class="twitter">
+                            <svg viewBox="126.444 2.281 589 589" height="42">
+                              <title>Twitter</title>
+                              <path d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779 34.066-42.86a154.78 154.78 0 0 1-49.209 18.801c-14.125-15.056-34.267-24.456-56.551-24.456-42.773 0-77.462 34.675-77.462 77.473 0 6.064.683 11.98 1.996 17.66-64.389-3.236-121.474-34.079-159.684-80.945-6.672 11.446-10.491 24.754-10.491 38.953 0 26.875 13.679 50.587 34.464 64.477a77.122 77.122 0 0 1-35.097-9.686v.979c0 37.54 26.701 68.842 62.145 75.961-6.511 1.784-13.344 2.716-20.413 2.716-4.998 0-9.847-.473-14.584-1.364 9.859 30.769 38.471 53.166 72.363 53.799-26.515 20.785-59.925 33.175-96.212 33.175-6.25 0-12.427-.373-18.491-1.104 34.291 21.988 75.006 34.824 118.759 34.824 142.496 0 220.428-118.052 220.428-220.428 0-3.361-.074-6.697-.236-10.021a157.855 157.855 0 0 0 38.707-40.158z" />
+                            </svg>
+                          </a>
+                          <a href="https://www.facebook.com" target="_blank" class="facebook">
+                      
+                            <svg viewBox="0 0 1700 1700" height="27">
+                              <title>Facebook</title>
+                              <path d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z">
+                      
+                            </svg>
+                      
+                          </a>
+                          <a href="https://instagram.com" target="_blank" class="instagram">
+                            <svg viewBox="0 0 24 24" height="32">
+                              <title>Instagram</title>
+                              <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" />
+                            </svg>
+                          </a>
+                          <a href="#" class="linkdin">
+                            <svg role="img" viewBox="0 0 24 24" height="23">
+                              <title>LinkedIn</title>
+                              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="profile"></div>
+                      </div>
+                </div>
+                <div class="contact-form">
+                  <label for="name">
+                    <span class="input-name">
+                      Name:
+                    </span>
+                    <input type="text" name="name" id="name" class="name">
+                  </label>
+                  <label for="email">
+                    <span class="input-name">
+                      Email address:
+                    </span>
+                    <input type="text" name="email" id="email" class="email">
+                  </label>
+                  <label for="project-info">
+                    <span class="input-name">
+                      Tell us about your project:
+                    </span>
+                    <textarea name="project-info" id="project-info" class="project-info"></textarea>
+                  </label>
+                  <button class="btn send-btn">
+                    Send
+                  </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <h4>Creative Agency</h4>
+            <div class="copyright"><a href="#"><span>Creative</span></a> &copy; 2019 All Right Reserved</div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Start Scroll To Top Btn -->
+    <div class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- End Scroll To Top Btn -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
