@@ -3,7 +3,7 @@ const menuEle = document.querySelector('.menu-icon')
 const menu = document.querySelector('.menu')
 menuEle.addEventListener("click", ()=> {
     menu.classList.toggle("open-menu")
-})
+});
 
 // Change Background Image Every 4 Seconds
 const landing = document.querySelector(".landing")
@@ -30,7 +30,6 @@ function settingsToggle() {
     gear.classList.toggle("fa-spin");
     sideBar.classList.toggle("open-close");
 }
-
 
 const colorLis = document.querySelectorAll(".colors-list li")
 colorLis.forEach(li => {
@@ -155,15 +154,24 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// scroll to top 
-let scrollToTop = document.querySelector(".scroll-top");
+window.addEventListener("scroll", () => {
+    const scrollHeight = window.pageYOffset;
+    const scrollToTop = document.querySelector(".scroll-top");
+    //show link
+    if(scrollHeight > 500){
+        scrollToTop.classList.add('show-link');
+    }else{
+        scrollToTop.classList.remove('show-link');
+    }
 
-scrollToTop.onclick = function() {
-    window.scroll({
-        top: 0,
-        behavior: "smooth"
-    });
-}
+    // scroll to top 
+    scrollToTop.onclick = function() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
 
 // Scroll To Sections
 function scrollToSection(selector) {
@@ -187,19 +195,6 @@ function handelActive(ev) {
     ev.target.classList.add("active");
 }
 
-// Show Sections When Scroll To Them
-// const sections = document.querySelectorAll("section");
-// window.addEventListener("scroll", checkSections );
-// checkSections();
-
-// function checkSections() {
-//     const triggerBottom = window.innerHeight / 5 * 4;
-//     sections.forEach((section) => {
-//         const sectionTop = section.getBoundingClientRect().top;
-//         if (sectionTop < triggerBottom) {
-//             section.classList.add("show");
-//         }else {
-//             section.classList.remove("show");
-//         }
-//     });
-// }
+// set date 
+const date = document.querySelector(".date");
+date.innerHTML = new Date().getFullYear();

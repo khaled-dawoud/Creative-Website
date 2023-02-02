@@ -996,6 +996,19 @@ section.timeline-section {
   line-height: 40px;
   font-size: 20px;
   transition: all 0.3s ease;
+  visibility: hidden;
+  animation: scroll-top 0.5s ease-in-out infinite alternate;
+}
+.show-link {
+  visibility: visible;
+}
+@keyframes scroll-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 /* End Scroll To Top */
 /* Start Contact Us */
@@ -1205,7 +1218,7 @@ label textarea:focus{
   font-size: 1rem;
   font-weight: 400;
 }
-.footer .copyright span {
+.footer .copyright span.creative {
   color: var(--primary-color);
 }
 /* End Footer */
